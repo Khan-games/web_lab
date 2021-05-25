@@ -64,11 +64,78 @@ let aside = Vue.component('aside-comp', {
     `
 })
 
-
 let app = new Vue({
     el: '#app',
+    data: {
+        list: [
+            {
+                id: 'DEV08801335',
+                name: 'Adam Denisov',
+                number: '7-(648)993-5934',
+                mail: 'belliott@youspan.mil',
+                date: '04/28/2018'
+            },
+            {
+                id: 'DEV08801111',
+                name: 'Adam Denisov',
+                number: '7-(648)993-5934',
+                mail: 'belliott@youspan.mil',
+                date: '04/28/2018'
+            },
+            {
+                id: 'DEV08801111',
+                name: 'Adam Denisov',
+                number: '7-(648)993-5934',
+                mail: 'belliott@youspan.mil',
+                date: '04/28/2018'
+            },
+            {
+                id: 'DEV08801111',
+                name: 'Adam Denisov',
+                number: '7-(648)993-5934',
+                mail: 'belliott@youspan.mil',
+                date: '04/28/2018'
+            },
+            {
+                id: 'DEV04380234',
+                name: 'Adam Denisov',
+                number: '7-(648)993-5934',
+                mail: 'belliott@youspan.mil',
+                date: '04/28/2018'
+            },
+            {
+                id: 'DEV08801111',
+                name: 'Adam Denisov',
+                number: '7-(648)993-5934',
+                mail: 'belliott@youspan.mil',
+                date: '04/28/2018'
+            },
+            {
+                id: 'DEV08801111',
+                name: 'Adam Denisov',
+                number: '7-(648)993-5934',
+                mail: 'belliott@youspan.mil',
+                date: '04/28/2018'
+            },
+            {
+                id: 'DEV08801111',
+                name: 'Adam Denisov',
+                number: '7-(648)993-5934',
+                mail: 'belliott@youspan.mil',
+                date: '04/28/2018'
+            },
+        ]
+    },
     components: {
         header: header,
         aside: aside,
     },
+    methods: {
+        saveForm() {
+          this.request('../index2.html', { }, () => {});
+    
+          this.$router.push('/');
+          location.reload();
+        },
+      },
 })

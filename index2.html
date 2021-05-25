@@ -16,105 +16,18 @@
                 <div class="content">
                     <aside-comp></aside-comp>
                     <div class="right__todo__content">
-                       <div class="todo__item">
+                       <div class="todo__item" v-for="item in list">
                            <div class="first__item--part">
                                <input type="checkbox" name="" id="">
                                <img src="./img/Blue.png" alt="pers-img">
-                               <h3>Adam Denisov</h3>
+                               <h3>{{ item.name }}</h3>
                            </div>
-                           <span class="user-id">DEV63016762</span>
-                           <span class="number">1-(618)312-3065</span>
-                           <span class="email">rsnyder@blogspan.gov</span>
-                           <span class="date">04/28/2018</span>
+                           <span class="user-id">{{item.id}}</span>
+                           <span class="number">{{item.number}}</span>
+                           <span class="email">{{item.mail}}</span>
+                           <span class="date">{{item.date}}</span>
                        </div>
-                       <div class="todo__item">
-                        <div class="first__item--part">
-                            <input type="checkbox" name="" id="">
-                            <img src="./img/Blue.png" alt="pers-img">
-                            <h3>Adam Denisov</h3>
-                        </div>
-                        <span class="user-id">DEV63016762</span>
-                        <span class="number">1-(618)312-3065</span>
-                        <span class="email">rsnyder@blogspan.gov</span>
-                        <span class="date">04/28/2018</span>
-                    </div>
-                    <div class="todo__item">
-                        <div class="first__item--part">
-                            <input type="checkbox" name="" id="">
-                            <img src="./img/Blue.png" alt="pers-img">
-                            <h3>Adam Denisov</h3>
-                        </div>
-                        <span class="user-id">DEV63016762</span>
-                        <span class="number">1-(618)312-3065</span>
-                        <span class="email">rsnyder@blogspan.gov</span>
-                        <span class="date">04/28/2018</span>
-                    </div>
-                    <div class="todo__item">
-                        <div class="first__item--part">
-                            <input type="checkbox" name="" id="">
-                            <img src="./img/Blue.png" alt="pers-img">
-                            <h3>Adam Denisov</h3>
-                        </div>
-                        <span class="user-id">DEV63016762</span>
-                        <span class="number">1-(618)312-3065</span>
-                        <span class="email">rsnyder@blogspan.gov</span>
-                        <span class="date">04/28/2018</span>
-                    </div>
-                    <div class="todo__item">
-                        <div class="first__item--part">
-                            <input type="checkbox" name="" id="">
-                            <img src="./img/Blue.png" alt="pers-img">
-                            <h3>Adam Denisov</h3>
-                        </div>
-                        <span class="user-id">DEV63016762</span>
-                        <span class="number">1-(618)312-3065</span>
-                        <span class="email">rsnyder@blogspan.gov</span>
-                        <span class="date">04/28/2018</span>
-                    </div>
-                    <div class="todo__item">
-                        <div class="first__item--part">
-                            <input type="checkbox" name="" id="">
-                            <img src="./img/Blue.png" alt="pers-img">
-                            <h3>Adam Denisov</h3>
-                        </div>
-                        <span class="user-id">DEV63016762</span>
-                        <span class="number">1-(618)312-3065</span>
-                        <span class="email">rsnyder@blogspan.gov</span>
-                        <span class="date">04/28/2018</span>
-                    </div>
-                    <div class="todo__item">
-                        <div class="first__item--part">
-                            <input type="checkbox" name="" id="">
-                            <img src="./img/Blue.png" alt="pers-img">
-                            <h3>Adam Denisov</h3>
-                        </div>
-                        <span class="user-id">DEV63016762</span>
-                        <span class="number">1-(618)312-3065</span>
-                        <span class="email">rsnyder@blogspan.gov</span>
-                        <span class="date">04/28/2018</span>
-                    </div>
-                    <div class="todo__item">
-                        <div class="first__item--part">
-                            <input type="checkbox" name="" id="">
-                            <img src="./img/Blue.png" alt="pers-img">
-                            <h3>Adam Denisov</h3>
-                        </div>
-                        <span class="user-id">DEV63016762</span>
-                        <span class="number">1-(618)312-3065</span>
-                        <span class="email">rsnyder@blogspan.gov</span>
-                        <span class="date">04/28/2018</span>
-                    </div>
-                    <div class="todo__item">
-                        <div class="first__item--part">
-                            <input type="checkbox" name="" id="">
-                            <img src="./img/Blue.png" alt="pers-img">
-                            <h3>Adam Denisov</h3>
-                        </div>
-                        <span class="user-id">DEV63016762</span>
-                        <span class="number">1-(618)312-3065</span>
-                        <span class="email">rsnyder@blogspan.gov</span>
-                        <span class="date">04/28/2018</span>
-                    </div>
+                       
                     </div>
                     </div>
                 </div>
